@@ -29,7 +29,7 @@ data lives in them, so the code stays private — but here's what's actually run
   <img src="inventory.png" width="260" />
 </p>
 
-🌐 **[smartbizai.in](https://smartbizai.in)** &nbsp;·&nbsp; 📱 Google Play _(link coming soon)_
+🌐 **[smartbizai.in](https://smartbizai.in)** &nbsp;·&nbsp; 📱 **[Google Play](https://play.google.com/store/apps/details?id=in.smartbizai.app)**
 
 **Also currently building:** a YOLOv8-based edge computer-vision system for petrol-station CCTV —
 dataset collection and labeling, model fine-tuning, and a live-monitoring/weekly-reporting
