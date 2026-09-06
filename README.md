@@ -15,9 +15,9 @@ parsing, guardrails, tool use), Android/Capacitor, computer vision basics (YOLO)
 🔍 Currently looking for my first full-time role in **AI / agentic engineering**.
 
 📁 Start here:
-- [agentic-ledger-demo](https://github.com/smartbizai-in/agentic-ledger-demo) — the guardrail
+- [agentic-ledger-demo](https://github.com/rohithreddydev/agentic-ledger-demo) — the guardrail
   pattern behind the WhatsApp bot, extracted and rebuilt from scratch with synthetic data
-- [doctoolkit](https://github.com/smartbizai-in/doctoolkit) — an offline-first Android document
+- [doctoolkit](https://github.com/rohithreddydev/doctoolkit) — an offline-first Android document
   toolkit; everything runs on-device, no backend, no network call anywhere in the app
 
-🔗 [smartbizai.in](https://smartbizai.in) · LinkedIn: _add your profile link here_
+🔗 [smartbizai.in](https://smartbizai.in) · [LinkedIn](https://www.linkedin.com/in/rohithreddydev/)
