@@ -48,6 +48,7 @@ the open, built from scratch with synthetic data:
 - **[doctoolkit](https://github.com/rohithreddydev/doctoolkit)** — an offline-first Android
   document toolkit (PDF/Word conversion, image tools, QR/barcode scanner). Everything runs
   on-device: no backend, no network call anywhere in the app.
+  📱 [Get it on Google Play](https://play.google.com/store/apps/details?id=com.smartbizai.doctoolkit)
 
 ## What I work with
 
