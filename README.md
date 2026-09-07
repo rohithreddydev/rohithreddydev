@@ -31,10 +31,13 @@ data lives in them, so the code stays private — but here's what's actually run
 
 🌐 **[smartbizai.in](https://smartbizai.in)** &nbsp;·&nbsp; 📱 **[Google Play](https://play.google.com/store/apps/details?id=in.smartbizai.app)**
 
-**Also currently building:** a YOLOv8-based edge computer-vision system for petrol-station CCTV —
-dataset collection and labeling, model fine-tuning, and a live-monitoring/weekly-reporting
-pipeline running against real camera feeds. That repo also stays private (it contains real
-security-camera footage of a live business), but it's real, running code, not a plan.
+**Also currently building: [bunk-cctv-ai](https://github.com/Smart-BizAI/bunk-cctv-ai)** — a
+YOLOv8-based edge computer-vision system for petrol-station CCTV. An iterative fine-tuning loop
+(each model version auto-labels the next batch of frames, retrains, gets visually compared
+before/after) feeds a live deployment that pulls RTSP from the station's existing 5-channel DVR,
+logs person/car/motorcycle/truck counts to SQLite, and produces weekly traffic reports. That repo
+stays private — it's real security-camera footage of a live business — but it's real, running
+code with real commit history, not a plan.
 
 ## Public code you can actually read
 
