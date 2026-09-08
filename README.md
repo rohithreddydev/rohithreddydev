@@ -19,10 +19,9 @@ data lives in them, so the code stays private — but here's what's actually run
 - A companion **WhatsApp bot** (Node.js/Express) that lets a shop owner run their business by
   texting it naturally — "add 500 fuel expense," "who owes me money" — powered by a Groq-hosted
   LLM for intent parsing and Google Gemini's vision model for reading photographed bills and
-  receipts. Before any AI-derived action can touch a customer's ledger, it passes through a
-  two-layer guard I designed against prompt injection: a sanitizer that flags known injection
-  patterns, and a strict allowlist validator that rejects anything outside a fixed schema no
-  matter what the model returns.
+  receipts. The bot sanitizes inputs and checks model-generated intent names against an
+  allowlist before routing them to business-specific handlers. The public ledger demo below
+  separately demonstrates explicit action, account, and amount validation with synthetic data.
 
 <p float="left">
   <img src="dashboard.png" width="260" />
@@ -31,13 +30,12 @@ data lives in them, so the code stays private — but here's what's actually run
 
 🌐 **[smartbizai.in](https://smartbizai.in)** &nbsp;·&nbsp; 📱 **[Google Play](https://play.google.com/store/apps/details?id=in.smartbizai.app)**
 
-**Also currently building: [bunk-cctv-ai](https://github.com/Smart-BizAI/bunk-cctv-ai)** — a
+**Also currently building: petrol-station CCTV analytics** — a
 YOLOv8-based edge computer-vision system for petrol-station CCTV. An iterative fine-tuning loop
 (each model version auto-labels the next batch of frames, retrains, gets visually compared
 before/after) feeds a live deployment that pulls RTSP from the station's existing 5-channel DVR,
-logs person/car/motorcycle/truck counts to SQLite, and produces weekly traffic reports. That repo
-stays private — it's real security-camera footage of a live business — but it's real, running
-code with real commit history, not a plan.
+logs person/car/motorcycle/truck counts to SQLite, and produces weekly traffic reports. The source repository stays private. Operational footage and datasets are kept outside
+Git history.
 
 ## Public code you can actually read
 
@@ -49,8 +47,7 @@ the open, built from scratch with synthetic data:
   parsing, a strict allowlist validator, and a double-entry ledger that never trusts the model's
   raw output. MIT-licensed, 17 passing tests.
 - **[doctoolkit](https://github.com/rohithreddydev/doctoolkit)** — an offline-first Android
-  document toolkit (PDF/Word conversion, image tools, QR/barcode scanner). Everything runs
-  on-device: no backend, no network call anywhere in the app.
+  document toolkit (PDF/Word conversion, image tools, QR/barcode scanner). Core document processing runs on-device, including a bundled OCR engine.
   📱 [Get it on Google Play](https://play.google.com/store/apps/details?id=com.smartbizai.doctoolkit)
 
 ## What I work with
